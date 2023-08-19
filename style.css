@@ -7,25 +7,39 @@ body {
     min-width: 1280px;
   }
 
-  .header {
+button {
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+
+button.herosignup {
+    background: royalblue;
+    border: 1px solid royalblue;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.header {
     background: #1F2937;
     display: flex;
     justify-content: space-between;
-    padding: 8px 100px;
+    padding: 8px 200px;
   }
 
-  .header a {
+.header a {
     font-size: 18px;
     color: #E5E7EB;
     text-decoration: none;
   }
 
-  .logo {
+.logo {
     font-size: 24px;
     color: #F9FAF8;
   }
 
-  ul {
+ul {
     display: flex;
     margin: 0;
     padding: 0;
@@ -33,8 +47,41 @@ body {
     list-style-type: none;
   }
   
-  .left, .right {
+.headerleft, .headerright {
     display: flex;
     align-items: center;
     gap: 16px;
   }
+
+.herosection {
+    display: flex;
+    padding: 100px 200px;
+    background: #1F2937;
+    gap: 40px;
+  }
+
+.heroleft, .heroright {
+    width: 50%;
+  }
+
+.heroleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+.heromaintext {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+}
+
+.herosecondarytext {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.heroright img {
+    max-width: 100%;
+  }
+
