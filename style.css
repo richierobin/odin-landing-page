@@ -4,7 +4,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-width: 1280px;
   }
 
 button {
@@ -26,6 +25,9 @@ button.herosignup {
     display: flex;
     justify-content: space-between;
     padding: 8px 200px;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-bottom: 1px solid lightgrey;
   }
 
 .header a {
@@ -58,16 +60,20 @@ ul {
     padding: 100px 200px;
     background: #1F2937;
     gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
 .heroleft, .heroright {
-    width: 50%;
+    width: 45%;
+    min-width: 550px;
   }
 
 .heroleft {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 10px;
   }
 
 .heromaintext {
@@ -83,5 +89,35 @@ ul {
 
 .heroright img {
     max-width: 100%;
+    border-radius: 8px;
   }
 
+.informationsection {
+    text-align: center;
+    padding: 60px 0px;
+}
+
+.informationsection img {
+    width: 200px;
+    height: 270px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 3px solid #1F2937;
+}
+
+.infotitle {
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 900;
+  }
+
+.infocontainer {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+    flex-wrap: wrap;
+  }
+  
+.info {
+    max-width: 200px;
+  }
