@@ -13,22 +13,27 @@ button {
   }
 
 button.herosignup {
-    background: royalblue;
-    border: 1px solid royalblue;
-    color: white;
-    font-weight: bold;
+    background: #C1121C;
+    border: 1px solid #C1121C;
     width: fit-content;
 }
 
+.herosignup a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .header {
-    background: #1F2937;
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 200px;
-    flex-wrap: wrap;
-    gap: 10px;
-    border-bottom: 1px solid lightgrey;
+    background: #333;
+    border-bottom: 1px solid #C1121C;
   }
+
+.headercontent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
 .header a {
     font-size: 18px;
@@ -52,13 +57,14 @@ ul {
 .headerleft, .headerright {
     display: flex;
     align-items: center;
-    gap: 16px;
+    margin: 10px 40px;
+    text-align: center;
   }
 
 .herosection {
     display: flex;
     padding: 100px 200px;
-    background: #1F2937;
+    background: #54585a;
     gap: 40px;
     justify-content: center;
     flex-wrap: wrap;
@@ -102,7 +108,7 @@ ul {
     height: 270px;
     border-radius: 8px;
     margin-bottom: 10px;
-    border: 3px solid #1F2937;
+    border: 3px solid #54585a;
 }
 
 .infotitle {
@@ -121,3 +127,81 @@ ul {
 .info {
     max-width: 200px;
   }
+
+.quotesection {
+    background-color: #E5E7EB;
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+.quotecontent {
+    max-width: 800px;
+    padding: 0px 40px;
+  }
+
+.quote {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #54585a;
+  }
+
+.quoteattribution {
+    display: flex;
+    justify-content: right;
+    font-weight: bold;
+}
+
+.ctasection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.ctamodal {
+    background-color: #707372;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px;
+    border-radius: 8px;
+    margin: 80px 20px
+  }
+
+.ctaleft {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    gap: 10px;
+  }
+
+.ctalefttitle {
+    font-size: 24px;
+    color: #F9FAF8;
+  }
+
+.ctalefttext {
+    color: #F9FAF8;
+  }
+
+button.ctaright {
+    background: #C1121C;
+    border: 1px solid #C1121C;
+    width: fit-content;
+  }
+
+.ctaright a {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+.footer {
+    background-color: #333;
+    color: #F9FAF8;
+    text-align: center;
+    padding: 40px;
+}
